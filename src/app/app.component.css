@@ -1,0 +1,42 @@
+.task1, .task2{
+    margin: 5% 5%;
+}
+.person{
+    padding: 10px;
+    /* background-color: red; */
+    width: 30%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.active-person-color{
+    background-color: green;
+}
+.inactive-person-color{
+    background-color: blue;
+}
+.deleted-person-color{
+    background-color: red;
+}
+.full-name, .about, .date-of-birth, .status{
+    color: white;
+    margin-top: 10px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(54, 84, 218);
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+.empty{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.loading{
+    margin-top: 20px;
+    font-size: 18px;
+}
