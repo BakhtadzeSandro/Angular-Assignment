@@ -6,10 +6,10 @@
   <div class="container" *ngIf="usersAreLoaded == true">
     <div class="person-container" *ngFor="let person of persons">
       <div class="person" [ngClass]="switchColors(person.status)" appBackground>
-        <div class="full-name">{{ person.firstName + " " + person.lastName}}</div>
-        <div class="about">{{ person.about }}</div>
-        <div class="date-of-birth">{{ person.dateOfBirth | date: "yyyy" }}</div>
-        <div class="status">{{ person.status }}</div>
+        <div class="full-name switch-black">{{ person.firstName + " " + person.lastName}}</div>
+        <div class="about switch-black">{{ person.about }}</div>
+        <div class="date-of-birth switch-black">{{ person.dateOfBirth | date: "yyyy" }}</div>
+        <div class="status switch-black">{{ person.status }}</div>
       </div>
     </div>
   </div>

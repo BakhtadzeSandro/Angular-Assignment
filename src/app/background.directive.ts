@@ -7,11 +7,10 @@ export class BackgroundDirective {
 
   constructor(private ref: ElementRef) { }
 
-  @HostListener("mouseenter")
+  @HostListener("click")
   changeColor(){
-    console.log("test");
     this.ref.nativeElement.style.background = "yellow";
-    let elements = this.ref.nativeElement.querySelectorAll(".full-name, .about, .date-of-birth, .status");
+    let elements = this.ref.nativeElement.querySelectorAll(".switch-black");
     elements.forEach((elem: HTMLElement) => elem.style.color = "black");
   }
 }

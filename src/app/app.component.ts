@@ -38,13 +38,13 @@ export class AppComponent {
     if(this.usersAreLoaded == true){
       this.usersAreLoaded = false;
     }
-    this.delay(3000)
+    this.delayUsers(3000)
     .then(()=>{
       this.usersAreLoaded = true;
       this.usersLoading = false;
     });
   }
-  delay(time: number) {
+  delayUsers(time: number) {
     return new Promise( resolve => setTimeout(resolve, time) );
   }
 
