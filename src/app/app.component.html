@@ -8,7 +8,7 @@
       <div class="person" [ngClass]="switchColors(person.status)" appBackground>
         <div class="full-name">{{ person.firstName + " " + person.lastName}}</div>
         <div class="about">{{ person.about }}</div>
-        <div class="date-of-birth">{{ person.dateOfBirth }}</div>
+        <div class="date-of-birth">{{ person.dateOfBirth | date: "yyyy" }}</div>
         <div class="status">{{ person.status }}</div>
       </div>
     </div>

@@ -11,7 +11,8 @@ export class BackgroundDirective {
   changeColor(){
     console.log("test");
     this.ref.nativeElement.style.background = "yellow";
-    this.ref.nativeElement.style.color = "black";
+    let elements = this.ref.nativeElement.querySelectorAll(".full-name, .about, .date-of-birth, .status");
+    elements.forEach((elem: HTMLElement) => elem.style.color = "black");
   }
-
 }
+
