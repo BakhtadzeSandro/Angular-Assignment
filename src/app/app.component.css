@@ -31,6 +31,7 @@ button{
     margin-top: 20px;
     color: white;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .empty{
     margin-top: 20px;
@@ -39,4 +40,8 @@ button{
 .loading{
     margin-top: 20px;
     font-size: 18px;
+}
+.first-names{
+    display: inline;
+    margin-top: 20px;
 }

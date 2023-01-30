@@ -7,7 +7,7 @@ export class MyDirectiveDirective {
 
   constructor(private ref: ElementRef) { }
 
-  @HostListener("mouseenter")
+  @HostListener("mouseover")
   bla(){
     console.log("test");
     this.ref.nativeElement.style.background = "green";

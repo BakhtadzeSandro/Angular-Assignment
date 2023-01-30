@@ -4,6 +4,7 @@
   <div class="empty" *ngIf="beforeLoad == true">List is empty...</div>
   <div class="loading" *ngIf="usersLoading == true">Loading...</div>
   <div class="container" *ngIf="usersAreLoaded == true">
+    Users: <div class="first-names" *ngFor="let person of persons">{{ person.firstName + ", " }}</div>
     <div class="person-container" *ngFor="let person of persons">
       <div class="person" [ngClass]="switchColors(person.status)" appBackground>
         <div class="full-name switch-black">{{ person.firstName + " " + person.lastName}}</div>
