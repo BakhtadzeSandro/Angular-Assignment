@@ -17,7 +17,7 @@ export class AppService{
             firstName: "Giorgi",
             lastName: "Bazerashvili",
             about: "About Giorgi",
-            dateOfBirth: new Date(" 01 / 01 / 1995"),
+            dateOfBirth: new Date(" 02 / 01 / 1996"),
             status: "Active"
         },
         {
