@@ -32,6 +32,10 @@ export class AppComponent {
     }
   }
 
+  delayUsers(time: number) {
+    return new Promise( resolve => setTimeout(resolve, time) );
+  }
+
   loadUsers() {
     this.usersLoading = true;
     this.beforeLoad = false;
@@ -43,9 +47,6 @@ export class AppComponent {
       this.usersAreLoaded = true;
       this.usersLoading = false;
     });
-  }
-  delayUsers(time: number) {
-    return new Promise( resolve => setTimeout(resolve, time) );
   }
 
   constructor(private appService: AppService){};
