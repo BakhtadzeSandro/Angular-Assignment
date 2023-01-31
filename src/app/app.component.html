@@ -4,12 +4,12 @@
   <div class="empty" *ngIf="beforeLoad == true">List is empty...</div>
   <div class="loading" *ngIf="usersLoading == true">Loading...</div>
   <div class="container" *ngIf="usersAreLoaded == true">
-    Users: <div class="first-names" *ngFor="let person of persons">{{ person.firstName + ", " }}</div>
+    <div class="first-names">Users: {{ persons | names }}</div>
     <div class="person-container" *ngFor="let person of persons">
       <div class="person" [ngClass]="switchColors(person.status)" appBackground>
         <div class="full-name switch-black">{{ person.firstName + " " + person.lastName}}</div>
         <div class="about switch-black">{{ person.about }}</div>
-        <div class="date-of-birth switch-black">{{ person.dateOfBirth | date: "yyyy" }}</div>
+        <div class="date-of-birth switch-black">{{ person.dateOfBirth | age }} years old</div>
         <div class="status switch-black">{{ person.status }}</div>
       </div>
     </div>

@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { SquareComponent } from './square/square.component';
 import { MyDirectiveDirective } from './my-directive.directive';
 import { BackgroundDirective } from './background.directive';
+import { AgePipe } from 'src/pipes/age.pipe';
+import { NamesPipe } from 'src/pipes/names.pipe';
 
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
     SquareComponent,
       MyDirectiveDirective,
-      BackgroundDirective
+      BackgroundDirective,
+      AgePipe,
+      NamesPipe
    ],
   imports: [
     BrowserModule
