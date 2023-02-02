@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core"
 
-interface Person{
+export interface Person{
     firstName: string,
     lastName: string,
     about: string,
