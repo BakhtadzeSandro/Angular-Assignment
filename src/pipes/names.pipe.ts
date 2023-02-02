@@ -10,7 +10,7 @@ export class NamesPipe implements PipeTransform {
   constructor(private appService: AppService) {}
 
   transform(persons: Person[]): string {
-      return this.appService.persons.map(person => person.firstName).join(', ');
+    return persons.map(person => person.firstName).join(', ');
   }
 
 }
